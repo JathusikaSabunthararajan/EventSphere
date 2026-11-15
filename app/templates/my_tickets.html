@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Digital Tickets | EventSphere{% endblock %}
+
+{% block content %}
+
+<section class="dashboard-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>EVENTSPHERE ACCOUNT</span>
+            <h2>My Digital Tickets</h2>
+            <p>Your event tickets and QR codes.</p>
+        </div>
+
+        <div id="ticketsContainer">
+            <p>Loading your tickets...</p>
+        </div>
+
+    </div>
+</section>
+
+<script src="/static/js/my_tickets.js"></script>
+
+{% endblock %}

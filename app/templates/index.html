@@ -1,0 +1,128 @@
+
+{% extends "base.html" %}
+
+{% block title %}EventSphere | Discover Events{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <span class="hero-label">YOUR EVENTS. YOUR EXPERIENCE.</span>
+
+            <h1>
+                Discover Events.<br>
+                Create <span>Memories.</span>
+            </h1>
+
+            <p>
+                Find exciting events, book your favourite venues
+                and enjoy unforgettable experiences with EventSphere.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#events" class="btn btn-primary">
+                    Explore Events
+                </a>
+
+                <a href="#venues" class="btn btn-outline">
+                    Book a Venue
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-image-card">
+                <div class="event-icon">🎉</div>
+                <h3>Make Every Moment Special</h3>
+                <p>Discover your next experience.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>WHY EVENTSPHERE?</span>
+            <h2>Everything You Need in One Place</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🎟️</div>
+                <h3>Easy Ticket Booking</h3>
+                <p>Discover events and book tickets easily.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏛️</div>
+                <h3>Venue Booking</h3>
+                <p>Find suitable venues for your special occasions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Digital QR Tickets</h3>
+                <p>Get digital tickets and enjoy quick check-in.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Events Section -->
+<section class="events-section" id="events">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>EXPLORE</span>
+            <h2>Discover Amazing Events</h2>
+            <p>Find your next unforgettable experience.</p>
+        </div>
+
+        <div id="publicEventsContainer" class="event-grid">
+            <div class="event-placeholder">
+                <h3>Loading Events...</h3>
+                <p>Please wait while we find exciting events.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Venue Section -->
+<section class="venue-section" id="venues">
+    <div class="container venue-content">
+
+        <div>
+            <span>HOST YOUR EVENT</span>
+            <h2>Find the Perfect Venue</h2>
+            <p>
+                Discover suitable spaces for private events,
+                celebrations and special occasions.
+            </p>
+            <a href="/login" class="btn btn-primary">
+                Get Started
+            </a>
+        </div>
+
+        <div class="venue-icon">🏢</div>
+
+    </div>
+</section>
+
+{% endblock %}

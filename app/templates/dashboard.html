@@ -1,0 +1,128 @@
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard | EventSphere{% endblock %}
+
+{% block content %}
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+        <div class="dashboard-heading">
+            <div>
+                <span>EVENTSPHERE ACCOUNT</span>
+                <h1>Welcome, <span id="dashboardUsername">User</span>!</h1>
+                <p>Manage your events and bookings in one place.</p>
+            </div>
+
+            <button id="logoutButton" class="btn btn-outline">
+                Logout
+            </button>
+        </div>
+
+        <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🎟️</div>
+            <h3>My Bookings</h3>
+            <p>View your event ticket bookings.</p>
+            <a href="#myBookingsSection" class="dashboard-link">
+                View Bookings
+            </a>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📱</div>
+            <h3>My Tickets</h3>
+            <p>Access your digital QR tickets.</p>
+            <a href="/my-tickets" class="dashboard-link">View Tickets</a>
+        </div>
+
+            <div class="dashboard-card">
+    <div class="dashboard-icon">⏳</div>
+    <h3>My Waitlist</h3>
+    <p>Check your event waitlist status.</p>
+    <a href="#myWaitlistSection" class="dashboard-link">
+        View Waitlist
+    </a>
+</div>
+
+           <div class="dashboard-card">
+    <div class="dashboard-icon">🔔</div>
+    <h3>Notifications</h3>
+    <p>View your latest notifications.</p>
+    <a href="#myNotificationsSection" class="dashboard-link">
+        View Notifications
+    </a>
+</div>
+
+        </div>
+
+
+<div class="dashboard-info" id="myBookingsSection">
+
+    <h2>My Bookings</h2>
+
+    <p id="bookingLoading">Loading your bookings...</p>
+
+    <div id="bookingsContainer"></div>
+
+</div>
+
+<div class="dashboard-info" id="myTicketsSection">
+
+    <h2>My Digital Tickets</h2>
+
+    <p id="ticketLoading">Loading your tickets...</p>
+
+    <div id="ticketsContainer"></div>
+
+</div>
+
+
+<div class="dashboard-info" id="myWaitlistSection">
+
+    <h2>My Waitlist</h2>
+
+    <p id="waitlistLoading">Loading waitlist...</p>
+
+    <div id="waitlistContainer"></div>
+
+</div>
+
+
+<div class="dashboard-info" id="myNotificationsSection">
+
+    <h2>My Notifications</h2>
+
+    <p id="notificationLoading">Loading notifications...</p>
+
+    <div id="notificationsContainer"></div>
+
+</div>
+
+
+        <div class="dashboard-info">
+            <h2>Account Information</h2>
+
+            <p><strong>Username:</strong>
+                <span id="userUsername">Loading...</span>
+            </p>
+
+            <p><strong>Email:</strong>
+                <span id="userEmail">Loading...</span>
+            </p>
+
+            <p><strong>Role:</strong>
+                <span id="userRole">Loading...</span>
+            </p>
+        </div>
+
+        <p id="dashboardMessage"></p>
+
+    </div>
+
+</section>
+
+{% endblock %}

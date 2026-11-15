@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}EventSphere{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="/" class="logo">
+                Event<span>Sphere</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="#events">Events</a>
+                <a href="#venues">Venues</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="/login" class="btn btn-outline">
+                    Login
+                </a>
+
+                <a href="/register" class="btn btn-primary">
+                    Get Started
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Main Page Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+
+            <h2>EventSphere</h2>
+
+            <p>
+                Discover events, book venues and experience
+                unforgettable moments.
+            </p>
+
+            <p class="copyright">
+                © 2026 EventSphere. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="/static/js/main.js"></script>
+
+</body>
+</html>

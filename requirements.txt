@@ -1,0 +1,16 @@
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic-settings
+httpx
+pytest
+pytest-asyncio
+python-multipart
+jinja2
+qrcode[pil]
+Pillow
+apscheduler
+passlib[bcrypt]
+python-jose[cryptography]
+email-validator
